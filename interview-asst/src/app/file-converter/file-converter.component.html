@@ -1,0 +1,14 @@
+
+<!-- <input type="file" (change)="onFileSelected($event)" accept=".pdf" name="fileList" >
+<button (click)="extractTextFromPDF()">Convert PDF to Text</button>
+<div *ngIf="convertedText">
+  <pre>{{ convertedText }}</pre>
+</div> -->
+
+<div>
+    <input type="file" (change)="onFileSelected($event)">
+    <button (click)="extractText()">Extract Text</button>
+  </div>
+  <div *ngIf="extractedText">
+    <pre>{{ extractedText }}</pre>
+  </div>
